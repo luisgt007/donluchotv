@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Don Lucho TV |Blog 2023</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <img src="logo1.gif" alt="dltv" />
+        <ul>
+          <li><a href="index.html" class="active">inicio</a></li>
+          <li><a href="download.html">descargas</a></li>
+          <li><a href="videos.html">Videos.</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article class="general">
+      <div class="titulo">
+        <h1>Don Luchotv</h1>
+      </div>
+     <div class="buscador">
+       <form action="buscar.php" method="POST" accept-charset="utf-8">
+        <input type="search" name="buscar" id="buscar" value="" placeholder="Buscar Archivos..." autofocus="" autocomplete=""/>
+      <button name="register" id="btn"> Buscar</button>
+      </form>
+      <div id="panel">
+        
+      </div>
+    </div>
+    
+    <div class="titulo">
+      <h2>Bienvenidos</h2>
+    </div>
+      
+      
+      <div class="parrafo">
+        <p>Hola bienvenidos a este Blog aqui encontrás diferentes archivos creados por DonLuchotv </p>
+        <br />
+        <p>si desean descargar cualquier archivo que haga referencia a los videos de mi canal de Youtube, solo hagan click en Descargas, o tambien busquen sus archivos en la barra de busqueda.</p>
+      </div>
+      <br />
+      <div class="imagenes">
+        <img src="sigma.jpeg" alt="Donluchotv" />
+      </div>
+      <div class="parrafo">
+        <p>Descarga SIGMA el nuevo juego de BattleRoyale para android dale click en descargas</p>
+      </div>
+     <br />
+     
+     <div class="titulo">
+       <h2>Como ver la Telenovela Hasta que la plata nos separe, Capítulos completos</h2>
+     </div>
+     <div class="parrafo">
+       <p>Quieres ver los capítulos completos de la telenovela <strong>Hasta que la Plata nos Separe</strong> aqui te lo cuento <a href="videos.html">Leer mas...</a></p>
+     </div>
+     <br />
+     <div class="titulo">
+       <h2>Como Hacer Gatillos para Free Fire, Pubg Mobile, Call Of Duty.</h2>
+     </div>
+     <div class="parrafo">
+       <p>Hola, quieres aprender a hacer Gatillos para un BattleRoyale aqui te enseño. <a href="videos.html">Ver como se hace</a></p>
+     </div>
+     <br />
+     <div class="titulo">
+       <h2>Descargar Text Now.</h2>
+     </div>
+    
+     <div class="parrafo">
+       <p>Hola, aqui podes descargar Text Now, app para conseguir números virtuales. <a href="download.html">Click aqui</a></p>
+     </div>
+     
+     
+     <br />
+      <div class="hide" id="hideText">
+      
+      <div class="titulo">
+        <h2>Aprende a como hackear una Red social</h2>
+      </div>
+      
+      <div class="imagenes">
+        <img src="2.png" alt="Donluchotv" />
+      </div>
+      
+      <div class="parrafo">
+        <p>Es la gran pregunta! que nos hacemos todos, como hackear un Facebook, se puede o no. La respuesta es muy simple. <strong>SI y NO</strong> ,la respuesta aquí abajo</p>
+      </div>
+      
+      <div class="link">
+        <a href="videos.html">Entrar</a>
+      </div>
+      
+      <br />
+      <div class="imagenes">
+        <img src="donluchotv2.png" alt="Donluchotv" />
+      </div>
+      <div class="parrafo">
+        <p>Aprende a hackear un android desde tu android, mira el video aqui  </p>
+      </div>
+      <div class="link">
+        <a href="videos.html">Click Aquí</a>
+      </div>
+      <br />
+      </div>
+      <div class="boton">
+        <button class="readMore_btn" id="hideText_btn" >Ver Mas Contenido</button>
+      </div>
+      
+    </article>
+    
+    <section class="paginacion">
+      <ul>
+        <li><a href="index.html" class="active">1</a></li>
+        <li><a href="download.html">2</a></li>
+        <li><a href="videos.html">3</a></li>
+      </ul>
+    </section>
+    
+    
+    <script src="mostrar.js"></script>
+    <script src="menu.js"></script>
+    
+    <script>
+      btn.onclick = function(){
+        var buscar = document.getElementById('buscar').value;
+        if (buscar == "Descargas") {
+          panel.innerHTML = "Por favor ingrese a Descargas, para ver mas contenido. 😄";
+        }else if(buscar == "Videos") {
+          panel.innerHTML = "Ingrese a videos, para más información 😄";
+        }else if(buscar == "Archivos") {
+          panel.innerHTML = "Hola, ingrese a la seccion descargas y deslice hacia riba para ver mas opciones 🥳"
+        }else if(buscar == "Archivos de freefire"){
+          panel.innerHTML = "Ve a descargas ya... 😬"
+        }else if (buscar == ""){
+          panel.innerHTML = "Por favor busque algo,😄"
+        }else if (buscar == "Hqlpns") {
+          panel.innerHTML = "Mira en la session videos, ahi encontraras mas información"
+        }else if (buscar == "Macro") {
+          panel.innerHTML = "Por el momento, no se a desarrollado una macro!"
+        }else if (buscar == "Freefire") {
+          panel.innerHTML = "Si desea descargar los archivos para hackear freefire haga click en Descargas"
+        }
+        else {
+          panel.innerHTML = ("No se encontro, ningún resultado 😮‍💨");
+        }
+      }
+    </script>
+    
+  </body>
+</html>

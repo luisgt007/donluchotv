@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family=Mukta&family=Rubik+Bubbles& display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* Estilos al menu */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #031319;
+  padding: 10px;
+  z-index: 1000;
+  max-width: 1000px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  
+}
+.menu img {
+  width: 65px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  list-style: none;
+}
+.menu ul li {
+  margin: 6px;
+  text-transform: uppercase;
+}
+.menu ul li .active {
+  border-bottom: 3px solid #fff;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: gold;
+  font-size: 14px;
+  font-family: 'Rubik Bubbles', cursive ;
+}
+.menu ul li a:hover {
+  background-color: gold;
+  color: #031319;
+  padding: 6px;
+  border-radius: 6px;
+  border-bottom: 2px solid #fff;
+}
+
+
+
+
+/* Estilos al buscador */
+ .buscador {
+   display: block;
+   align-items: center;
+   margin-top: 10px;
+ }
+.buscador input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 0 5px;
+  margin-left: 20px;
+  outline: none;
+}
+.buscador input:hover {
+  box-shadow: 0 0 2px 2px crimson;
+  border: none;
+}
+.general .buscador button {
+  width: 20%;
+  height: 40px;
+  background-color: gold;
+  color: #031319;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  font-family: 'Rubik Bubbles', cursive ;
+  cursor: pointer;
+}
+.buscador  button:hover {
+  width: 20%;
+  background-color: transparent;
+  border: 2px solid crimson;
+  padding: 5px;
+  color: red;
+}
+#panel {
+  color: crimson;
+  padding:0 25px;
+  margin-top: 3px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+}
+
+.general {
+  margin-top: 10px;
+}
+
+.general .titulo h1 {
+  font-size: 26px;
+  color: crimson;
+  font-family: 'Rubik Bubbles', cursive ;
+  margin-left: 210px;
+  margin-top: 70px;
+  
+}
+.general .parrafo {
+  margin-top: 15px;
+}
+.general .parrafo p {
+  padding: 0 25px;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  color: #333;
+  
+}
+
+.general .titulo h2 {
+  color: crimson;
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+  padding: 0 25px;
+  margin: 6px;
+}
+
+.general .imagenes {
+  text-align: center;
+}
+.general .imagenes img {
+  width: 95%;
+  border-radius: 5px;
+}
+
+.general .parrafo p a {
+  color: #1877f2;
+}
+.general .parrafo p a:hover {
+  color: crimson;
+}
+
+/* ocultar contenido */
+ 
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+
+
+.general .boton {
+  text-align: center;
+}
+.general .boton button {
+  width: 60%;
+  height: 40px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 5px;
+  padding: 15px 32px;
+}
+.general .boton button:hover {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  height: 40px;
+  color: red;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+/* hasta aqui */
+
+.general .link {
+  text-align: center;
+  margin-top: 30px;
+}
+.general .link a {
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 8px;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+}
+.general .link a:hover {
+  background-color: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* estilos a seccion  Downloads */
+
+.seccion .subtitulo {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.seccion .subtitulo h2 {
+  font-size: 20px;
+  color: crimson;
+  margin-top: 4px;
+  font-family: 'Rubik Bubbles', cursive ;
+  margin-left: 210px;
+}
+
+.seccion .nombres {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.seccion .imagenes img {
+  text-align: center;
+  width: 95%;
+  margin-left: 10px;
+}
+.seccion .nombres h3 {
+  color: #1877f2;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -15px;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Estilos a videos */
+
+
+.seccion .parrafo {
+  margin-left: 25px;
+}
+.seccion .parrafo p {
+  font-family: 'Comfortaa', cursive;
+  color: #333;
+}
+.seccion .video {
+  text-align: center;
+  margin-top: 15px;
+}
+.seccion .nombres h4 {
+  background-color: #fff;
+  color: crimson;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.seccion .link {
+  margin-top: 13px;
+  margin-left: 25px;
+}
+.seccion .link a {
+  background: crimson;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+}
+.seccion .link a:hover {
+  background: transparent;
+  border: 2px solid crimson;
+  color: red;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.seccion .parrafo li {
+  
+  font-family: 'Comfortaa', cursive;
+  padding: 0 25px;
+}
+
+
+/* Button */
+.post-body .button{
+  display:inline-flex;
+  align-items:center; 
+  margin:12px 12px 12px 0;
+  padding:10px 15px;
+  outline:0;
+  border:0;
+  border-radius:2px;
+  line-height:20px; 
+  color:white; 
+  background-color:black; 
+  font-size:13px;
+  font-family: 'Comfortaa', cursive;
+  white-space:nowrap;
+  overflow:hidden;
+  max-width:40%;
+  
+}
+.button.outline{
+  color:inherit;
+  background-color:transparent;
+  border:1px solid red;
+  
+}
+.button:hover{
+  border-color:2px solid crimson;
+  
+}
+.button.whatsapp{
+  background-color:#25D366;
+  
+}
+.buttonInfo{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center; 
+  margin:12px 0 0;
+  
+} 
+.buttonInfo > *{
+  margin:0 12px 12px 0
+  
+} 
+.buttonInfo > *:last-child{
+  margin-right:0;
+}
+@media screen and (max-width:480px){
+  .buttonInfo > *{
+    flex-grow:1;
+    justify-content:center
+   }
+    }
+.buttonInfo > *:last-child{
+  flex:0 0 auto;
+}
+  
+/* Button Download */
+.descarga{
+  max-width:500px;background-color:#fefefe; box-shadow:0 10px 8px -8px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin-top:20px;margin-bottom:20px; display:flex;align-items:center; line-height:1.8em;font-size:14px
+  
+}
+.descarga a{
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;
+  height:50px;
+  padding:10px; 
+  background:#f1f1f070;border-radius:10px
+  
+}
+.descarga a{
+    background-color:#1877f2;
+    color:#fff; 
+    margin:0;
+    padding:10px 6px;
+    border-radius:3px; 
+    width:auto;
+    height:auto; 
+    line-height:1px;
+    font-size:13px
+  
+}
+.descarga a:after{
+  content:attr(aria-label)
+  
+} 
+.descarga a:before{
+  content:attr(data-text)
+  
+} 
+.seccion .parrafo p strong {
+  background-color: gold;
+}
+
+.paginacion {
+  margin: 20px 0;
+}
+.paginacion ul {
+  list-style: none;
+  text-align: center;
+}
+.paginacion ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.paginacion ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #1877f2;
+  text-decoration: none;
+}
+.paginacion ul li a:hover {
+  background-color: gold;
+  color: #031319;
+}
+.paginacion ul li .active {
+  background-color: gold;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    padding-top: 80px;
+  }
+  .menu {
+    top: 0;
+    position: fixed;
+  }
+  .menu {
+    padding: 25px;
+  }
+  .menu ul li {
+    text-transform: uppercase;
+    margin: 8px;
+    font-size: 20px;
+  }
+  .menu ul li a {
+    font-size: 20px;
+  }
+  
+  .general {
+    margin-top: -50px;
+  }
+  .general .titulo h1 {
+    text-align: left;
+    
+  }
+  .general .imagenes img {
+    width: 80%;
+    border: 2px solid gold;
+  }
+  .general .parrafo p {
+    font-size: 14px;
+  }
+  .seccion .imagenes {
+    text-align: center;
+  }
+  .seccion .imagenes img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+  }
+  .seccion .parrafo p {
+    font-size: 12px;
+  }
+  .seccion .link {
+    text-align: center;
+  }
+  .seccion .link a {
+    font-size: 13px;
+  }
+  .seccion .video {
+    width: 400px;
+    height: 300px;
+  }
+  
+}
